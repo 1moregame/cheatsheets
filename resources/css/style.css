@@ -7,6 +7,11 @@
   color: rgba(105, 3, 103, 0.855);
   font-family: monospace;
 }
+.description {
+  font-size: 0.8rem;
+  color: darkslateblue;
+}
+
 #code {
   width: 25%;
 }
