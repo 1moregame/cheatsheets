@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../resources/css/style.css" />
+
+    <title>HTML Tables</title>
+  </head>
+  <body>
+    <header>
+      <div class="site-title">Cheat Sheets</div>
+      <nav></nav>
+    </header>
+    <main>
+      <h1>HTML Tables</h1>
+
+      <section>
+        <h2>When should I use a table?</h2>
+        <p>
+          HTML tables are a gridlike structure featuring rows and columns. They
+          are useful for displaying tabular data. Although historically used to
+          create layouts of many webpages, they are not designed for that
+          purpose. In addition to creating a 'tag soup' when attempting to
+          layout a page with table elements they also should be avoided for the
+          following reasons:
+        </p>
+        <ul>
+          <li>
+            <h3>Tables may impact accessibility</h3>
+            <p>
+              Tables are difficult for screen readers to parse. Most screen
+              readers will read content from left to right, top to bottom. This
+              may make sense visually with the proper context, but may not work
+              for the overall understanding of a webpage.
+            </p>
+          </li>
+
+          <li>
+            <h3>Layout changes are difficult</h3>
+            <p>
+              The cumbersome nature of tables may make it difficult to maintain
+              or modify a webpage. The nested tags and possibly nested tables
+              may make it very difficult to understand where an element is or
+              what will happen if you move an element.
+            </p>
+          </li>
+          <li>
+            <h3>Tables are not responsive</h3>
+            <p>
+              Tables can be designed using percentages to be somewhat flexible
+              as a page changes sizes, but generally it is not very responsive.
+              To achieve even moderate responsiveness generally would require
+              much more work than using true layout oriented design techniques.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tags, Syntax and Examples</h2>
+        <p>
+          As noted earlier, tables are excellent tools to present tabular style
+          data. In the example below, a table is used to show each of the table
+          elements, the propper syntax and show an example of them in action.
+        </p>
+        <table>
+          <colgroup>
+            <col />
+            <col id="code" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Syntax</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="element">&#60;table&#62;</span><br /><span
+                  class="description"
+                  >Defines a table. All related table elements should be housed
+                  within.
+                </span>
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;table&#62;<br />...<br />
+                  &#60;&#47;table&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;th&#62;</span><br /><span
+                  class="description"
+                  >Defines a header cell in a table
+                </span>
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;th&#62;<br />...<br />
+                  &#60;&#47;th&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;tr&#62;</span><br /><span
+                  class="description"
+                  >Defines a row in a table. Rows house th and td elements.
+                </span>
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;tr&#62;<br />...<br />
+                  &#60;&#47;tr&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;td&#62;</span><br /><span
+                  class="description"
+                  >Defines a cell in a table
+                </span>
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;td&#62;<br />...<br />
+                  &#60;&#47;td&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;caption&#62;</span><br /><span
+                  class="description"
+                  >Defines a table caption. Should be positioned above the
+                  table.
+                </span>
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;caption&#62;<br />...<br />&#60;&#47;caption&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <caption>
+                    Table Caption
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;colgroup&#62;</span><br /><span
+                  class="description"
+                  >Specifies a group of one or more columns in a table for
+                  formatting. Must appear after caption tag and before any other
+                  element.</span
+                >
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;colgroup&#62; &#60;&#47;colgroup&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <colgroup></colgroup>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;col&#62;</span><br /><span
+                  class="description"
+                >
+                  Specifies column properties for each column within a
+                  &#60;colgroup&#62; element. In this example 2 columns are
+                  included via span="2"</span
+                >
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;colgroup&#62;<br /><span class="indent"
+                    >&#60;col span ="2"&#47;&#62; </span
+                  ><br />&#60;&#47;colgroup&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <colgroup>
+                    <col span="2" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;thead&#62;</span><br /><span
+                  class="description"
+                  >Groups the header content in a table. Browsers can use these
+                  elements to enable scrolling of the table body independently
+                  of the header and footer. Also, when printing a large table
+                  that spans multiple pages, these elements can enable the table
+                  header and footer to be printed at the top and bottom of each
+                  page.</span
+                >
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;thead&#62;<br />... <br />&#60;&#47;thead&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <thead class="theader">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody">
+                    <tr>
+                      <td>r1c1</td>
+                      <td>r1c2</td>
+                      <td>r1c3</td>
+                    </tr>
+                    <tr>
+                      <td>r2c1</td>
+                      <td>r2c2</td>
+                      <td>r2c3</td>
+                    </tr>
+                    <tr>
+                      <td>r3c1</td>
+                      <td>r3c2</td>
+                      <td>r3c3</td>
+                    </tr>
+                    <tr>
+                      <td>r4c1</td>
+                      <td>r4c2</td>
+                      <td>r4c3</td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="tfooter">
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;tbody&#62;</span><br /><span
+                  class="description"
+                  >Groups the body content in a table.Browsers can use these
+                  elements to enable scrolling of the table body independently
+                  of the header and footer.</span
+                >
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;tbody&#62;<br />...<br />
+                  &#60;&#47;tbody&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <thead class="theader">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody">
+                    <tr>
+                      <td>r1c1</td>
+                      <td>r1c2</td>
+                      <td>r1c3</td>
+                    </tr>
+                    <tr>
+                      <td>r2c1</td>
+                      <td>r2c2</td>
+                      <td>r2c3</td>
+                    </tr>
+                    <tr>
+                      <td>r3c1</td>
+                      <td>r3c2</td>
+                      <td>r3c3</td>
+                    </tr>
+                    <tr>
+                      <td>r4c1</td>
+                      <td>r4c2</td>
+                      <td>r4c3</td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="tfooter">
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="element">&#60;tfoot&#62;</span><br /><span
+                  class="description"
+                  >Groups the footer content in a table. Browsers can use these
+                  elements to enable scrolling of the table body independently
+                  of the header and footer.
+                </span>
+              </td>
+              <td>
+                <span class="css"></span>
+                <span class="html"
+                  >&#60;tfoot&#62;<br />...<br />&#60;&#47;tfoot&#62;
+                </span>
+              </td>
+              <td>
+                <table class="example">
+                  <thead class="theader">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody">
+                    <tr>
+                      <td>r1c1</td>
+                      <td>r1c2</td>
+                      <td>r1c3</td>
+                    </tr>
+                    <tr>
+                      <td>r2c1</td>
+                      <td>r2c2</td>
+                      <td>r2c3</td>
+                    </tr>
+                    <tr>
+                      <td>r3c1</td>
+                      <td>r3c2</td>
+                      <td>r3c3</td>
+                    </tr>
+                    <tr>
+                      <td>r4c1</td>
+                      <td>r4c2</td>
+                      <td>r4c3</td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="tfooter">
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Resources</h2>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a
+            >MDN Table Basics
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/html/html_tables.asp"
+              target="_blank"
+              rel="noopener noreferrer"
+              >W3 Schools HTML Tables</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
