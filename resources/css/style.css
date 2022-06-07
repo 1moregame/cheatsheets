@@ -17,7 +17,7 @@ header {
 }
 
 header::before {
-  background-image: url("../images/annie-vo-HUuWNQmW58A-unsplash\ \(1\).jpg");
+  background-image: url("../images/annie-vo-HUuWNQmW58A-unsplash.jpg");
   background-size: 100% contain;
   background-position: center;
   top: 0px;
